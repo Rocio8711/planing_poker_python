@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Date, BigInteger
 from sqlalchemy.orm import declarative_base
-
+#creacion de sala como entidad
 Base = declarative_base()
 
 class Sala(Base):
