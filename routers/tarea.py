@@ -5,7 +5,7 @@ from models.tarea import Tarea
 from schemas.tarea import TareaCreate, TareaResponse
 from database import get_db
 
-router = APIRouter(prefix="/tareas", tags=["Tareas"])
+router = APIRouter(prefix="/tarea", tags=["Tareas"])
 
 @router.post("/", response_model=TareaResponse)
 def crear_tarea(tarea: TareaCreate, db: Session = Depends(get_db)):

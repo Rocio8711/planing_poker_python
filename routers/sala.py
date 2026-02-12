@@ -5,7 +5,7 @@ from models.sala import Sala
 from schemas.sala import SalaCreate, SalaResponse
 from database import get_db
 
-router = APIRouter(prefix="/salas", tags=["Salas"])
+router = APIRouter(prefix="/sala", tags=["Salas"])
 
 # Crear sala
 @router.post("/", response_model=SalaResponse)

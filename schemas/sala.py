@@ -7,7 +7,7 @@ class SalaBase(BaseModel):
     descripcion: Optional[str] = None
     fecha: Optional[date] = None
     creador_id: Optional[int] = None
-    isActiva: Optional[int] = None
+    is_activa: Optional[int] = None  
 
 class SalaCreate(SalaBase):
     pass
@@ -18,3 +18,4 @@ class SalaResponse(SalaBase):
     model_config = {
         "from_attributes": True
     }
+
