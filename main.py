@@ -6,6 +6,7 @@ import models.sala
 import models.tarea
 import models.usuario
 import models.votacion
+import models.sala_has_tarea
 
 
 from routers.sala import router as sala_router
@@ -17,6 +18,7 @@ from routers.usuario_has_sala import router as usuario_has_sala_router
 from routers.sala_con_tarea import router as sala_con_tarea_router
 from routers.sala_lista_con_usuarios import router as sala_lista_con_usuarios_router
 from routers.sala_con_creador import router as salas_con_creador_router
+from routers.sala_lista_tarea import router as sala_lista_tarea_router
 
 app = FastAPI(title="Planning Poker API")
 
@@ -33,3 +35,4 @@ app.include_router(usuario_has_sala_router)
 app.include_router(sala_con_tarea_router)
 app.include_router(sala_lista_con_usuarios_router)
 app.include_router(salas_con_creador_router)
+app.include_router(sala_lista_tarea_router)
