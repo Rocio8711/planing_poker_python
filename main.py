@@ -20,6 +20,8 @@ from routers.sala_lista_con_usuarios import router as sala_lista_con_usuarios_ro
 from routers.sala_con_creador import router as salas_con_creador_router
 from routers.sala_lista_tarea import router as sala_lista_tarea_router
 from routers.sala_lista_tarea_finalizada_valor_final import router as sala_lista_tarea_finalizada_valor_final_router
+from routers.super_sala import router as super_sala_router
+from routers.usuarios_con_estado import router as usuarios_con_estado_router
 
 app = FastAPI(title="Planning Poker API")
 
@@ -38,3 +40,5 @@ app.include_router(sala_lista_con_usuarios_router)
 app.include_router(salas_con_creador_router)
 app.include_router(sala_lista_tarea_router)
 app.include_router(sala_lista_tarea_finalizada_valor_final_router)
+app.include_router(super_sala_router)
+app.include_router(usuarios_con_estado_router)
